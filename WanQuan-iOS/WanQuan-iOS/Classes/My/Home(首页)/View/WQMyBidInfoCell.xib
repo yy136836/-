@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WQMyBidInfoCell" id="H43-gF-doK" customClass="WQMyBidInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H43-gF-doK" id="lsj-Bx-p5m">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-pB-KiY">
+                        <rect key="frame" x="0.0" y="53" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Z4s-QD-zfe"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待选定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-rs-U6p">
+                        <rect key="frame" x="317" y="19" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="求介绍海淀法院的人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaS-2F-9mY">
+                        <rect key="frame" x="14" y="19" width="287" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="lTe-rs-U6p" firstAttribute="centerY" secondItem="lsj-Bx-p5m" secondAttribute="centerY" id="BiF-fT-uNw"/>
+                    <constraint firstItem="k0U-pB-KiY" firstAttribute="leading" secondItem="lsj-Bx-p5m" secondAttribute="leading" id="Prc-Xn-Wlm"/>
+                    <constraint firstItem="qaS-2F-9mY" firstAttribute="centerY" secondItem="lsj-Bx-p5m" secondAttribute="centerY" id="Sd8-b2-WQ8"/>
+                    <constraint firstItem="qaS-2F-9mY" firstAttribute="leading" secondItem="lsj-Bx-p5m" secondAttribute="leading" constant="14" id="Zi9-xX-CcM"/>
+                    <constraint firstAttribute="trailing" secondItem="k0U-pB-KiY" secondAttribute="trailing" id="b1H-H0-Wtp"/>
+                    <constraint firstAttribute="trailing" secondItem="lTe-rs-U6p" secondAttribute="trailing" constant="15" id="nta-p2-IfX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qaS-2F-9mY" secondAttribute="trailing" constant="66" id="t7r-qp-ZSQ"/>
+                    <constraint firstAttribute="bottom" secondItem="k0U-pB-KiY" secondAttribute="bottom" constant="0.5" id="zdp-k9-8ax"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10000" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="-179.5" y="27.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SYO-Ij-GMy" customClass="WQTransferGroupManagerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SYO-Ij-GMy" id="xpc-sA-5as">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="member_normal" translatesAutoresizingMaskIntoConstraints="NO" id="W8Y-yx-Lqf">
+                        <rect key="frame" x="342" y="28.5" width="18" height="18"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqu-RL-MTz">
+                        <rect key="frame" x="67" y="28" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-1c-GrB">
+                        <rect key="frame" x="15" y="15" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0w1-8s-Rxg"/>
+                            <constraint firstAttribute="width" constant="44" id="HGu-gf-eOq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UWi-1c-GrB" firstAttribute="centerY" secondItem="xpc-sA-5as" secondAttribute="centerY" id="0FE-iW-m7z"/>
+                    <constraint firstAttribute="trailing" secondItem="W8Y-yx-Lqf" secondAttribute="trailing" constant="15" id="G9G-mG-JNb"/>
+                    <constraint firstItem="W8Y-yx-Lqf" firstAttribute="centerY" secondItem="xpc-sA-5as" secondAttribute="centerY" id="OR5-Un-SMJ"/>
+                    <constraint firstItem="hqu-RL-MTz" firstAttribute="leading" secondItem="UWi-1c-GrB" secondAttribute="trailing" constant="8" id="PUp-nM-Smk"/>
+                    <constraint firstItem="UWi-1c-GrB" firstAttribute="leading" secondItem="xpc-sA-5as" secondAttribute="leading" constant="15" id="VK2-Sn-aCa"/>
+                    <constraint firstItem="hqu-RL-MTz" firstAttribute="centerY" secondItem="UWi-1c-GrB" secondAttribute="centerY" id="xSe-LU-hkk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="hqu-RL-MTz" id="DUj-c0-WfM"/>
+                <outlet property="selectedImage" destination="W8Y-yx-Lqf" id="cUe-pH-x2d"/>
+                <outlet property="touxiang" destination="UWi-1c-GrB" id="XbO-1d-6Xl"/>
+            </connections>
+            <point key="canvasLocation" x="-45.5" y="73.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="member_normal" width="18" height="18"/>
+    </resources>
+</document>

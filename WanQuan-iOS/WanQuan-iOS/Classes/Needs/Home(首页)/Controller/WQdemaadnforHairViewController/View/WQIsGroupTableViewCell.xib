@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="327" id="jF5-Bh-1y7" customClass="WQIsGroupTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jF5-Bh-1y7" id="iVT-9t-o3Z">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yg2-Ih-WIC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="11"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="zUj-yw-KXf"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同时发布到需求主页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2Z-ex-7Eb">
+                        <rect key="frame" x="20" y="21" width="147" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-wl-1Na">
+                        <rect key="frame" x="312" y="16" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchConlOperation:" destination="jF5-Bh-1y7" eventType="valueChanged" id="t1F-K9-kc9"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yg2-Ih-WIC" firstAttribute="leading" secondItem="iVT-9t-o3Z" secondAttribute="leading" id="3ic-16-HIw"/>
+                    <constraint firstItem="v2Z-ex-7Eb" firstAttribute="centerY" secondItem="p8d-wl-1Na" secondAttribute="centerY" id="Ehp-ap-afi"/>
+                    <constraint firstAttribute="trailing" secondItem="yg2-Ih-WIC" secondAttribute="trailing" id="IrS-Rr-yAy"/>
+                    <constraint firstItem="yg2-Ih-WIC" firstAttribute="top" secondItem="iVT-9t-o3Z" secondAttribute="top" id="Qbe-Ff-I3x"/>
+                    <constraint firstItem="v2Z-ex-7Eb" firstAttribute="leading" secondItem="iVT-9t-o3Z" secondAttribute="leading" constant="20" id="UpZ-YI-vBR"/>
+                    <constraint firstAttribute="trailing" secondItem="p8d-wl-1Na" secondAttribute="trailing" constant="14" id="XAi-V1-N65"/>
+                    <constraint firstItem="p8d-wl-1Na" firstAttribute="top" secondItem="yg2-Ih-WIC" secondAttribute="bottom" constant="5" id="izl-tL-G2y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="anonymitySwitch" destination="p8d-wl-1Na" id="kc8-dO-TyI"/>
+            </connections>
+            <point key="canvasLocation" x="-5.5" y="-59.5"/>
+        </tableViewCell>
+    </objects>
+</document>

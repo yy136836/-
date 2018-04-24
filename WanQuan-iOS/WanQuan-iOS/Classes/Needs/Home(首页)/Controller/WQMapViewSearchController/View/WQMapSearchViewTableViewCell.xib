@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WFS-nY-c4P" customClass="WQMapSearchViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFS-nY-c4P" id="gai-WL-vuf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loc_icon" translatesAutoresizingMaskIntoConstraints="NO" id="b7X-9I-W1d">
+                        <rect key="frame" x="30" y="22" width="17" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="4iC-zQ-HOh"/>
+                            <constraint firstAttribute="width" constant="17" id="oOP-2o-rs7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNh-yb-t8I">
+                        <rect key="frame" x="65" y="16" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="某市某地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwY-kg-HIO">
+                        <rect key="frame" x="65" y="42" width="66.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b7X-9I-W1d" firstAttribute="top" secondItem="gai-WL-vuf" secondAttribute="top" constant="22" id="1Th-Ms-4yU"/>
+                    <constraint firstItem="QwY-kg-HIO" firstAttribute="top" secondItem="KNh-yb-t8I" secondAttribute="bottom" constant="8" id="G1X-eQ-xBu"/>
+                    <constraint firstItem="KNh-yb-t8I" firstAttribute="top" secondItem="gai-WL-vuf" secondAttribute="top" constant="16" id="dk5-9a-IOi"/>
+                    <constraint firstItem="b7X-9I-W1d" firstAttribute="leading" secondItem="gai-WL-vuf" secondAttribute="leading" constant="30" id="peM-uh-kuh"/>
+                    <constraint firstItem="QwY-kg-HIO" firstAttribute="leading" secondItem="b7X-9I-W1d" secondAttribute="trailing" constant="18" id="q2U-Gp-aa0"/>
+                    <constraint firstItem="KNh-yb-t8I" firstAttribute="leading" secondItem="b7X-9I-W1d" secondAttribute="trailing" constant="18" id="skr-b7-2Om"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapViewLocation" destination="QwY-kg-HIO" id="J6a-5s-rig"/>
+                <outlet property="mapViewStoreName" destination="KNh-yb-t8I" id="N54-ug-QRe"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="-180"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="loc_icon" width="17" height="24"/>
+    </resources>
+</document>

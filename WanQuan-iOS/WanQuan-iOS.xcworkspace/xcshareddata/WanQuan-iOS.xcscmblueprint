@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "53971B8BD072B897BBAB4C3B375E4440438D5E38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "53971B8BD072B897BBAB4C3B375E4440438D5E38" : 9223372036854775807,
+    "3D27D80E8E9516E50062F726C240292B69E18E46" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E84CB7D-6F8F-40E7-B065-E4C1C0275695",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "53971B8BD072B897BBAB4C3B375E4440438D5E38" : "WanQuan-iOS\/",
+    "3D27D80E8E9516E50062F726C240292B69E18E46" : "Desktop\/iOS%E5%BC%80%E5%8F%91\/CarApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WanQuan-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WanQuan-iOS\/WanQuan-iOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/VamCriss\/CarApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D27D80E8E9516E50062F726C240292B69E18E46"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/linhuijie\/WanQuan-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53971B8BD072B897BBAB4C3B375E4440438D5E38"
+    }
+  ]
+}

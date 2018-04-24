@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="WQUserProfileJoinedGroupCell" id="eAW-OT-WFi" customClass="WQUserProfileJoinedGroupCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eAW-OT-WFi" id="fsB-zD-G2U">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhanweitu" translatesAutoresizingMaskIntoConstraints="NO" id="25P-qD-kmH">
+                        <rect key="frame" x="15" y="15" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="RG8-Ch-Qym"/>
+                            <constraint firstAttribute="width" constant="60" id="sDe-1p-qtk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美国房产群" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZl-GG-STS">
+                        <rect key="frame" x="90" y="35" width="206" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-r4-sBX" customClass="WQSwitch">
+                        <rect key="frame" x="311" y="30" width="51" height="31"/>
+                        <color key="onTintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAr-G6-z9p">
+                        <rect key="frame" x="90" y="89" width="221" height="0.5"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="J0X-aG-qxj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOi-Sm-FL8">
+                        <rect key="frame" x="90" y="89.5" width="285" height="0.5"/>
+                        <color key="backgroundColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="HT9-hh-J4x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="25P-qD-kmH" firstAttribute="leading" secondItem="fsB-zD-G2U" secondAttribute="leading" constant="15" id="2lt-wP-9ph"/>
+                    <constraint firstAttribute="trailing" secondItem="fOi-Sm-FL8" secondAttribute="trailing" id="6mR-41-Qti"/>
+                    <constraint firstAttribute="bottom" secondItem="fOi-Sm-FL8" secondAttribute="bottom" constant="-0.5" id="Rom-L0-Abi"/>
+                    <constraint firstItem="6zn-r4-sBX" firstAttribute="leading" secondItem="HZl-GG-STS" secondAttribute="trailing" constant="15" id="TCB-sv-q2j"/>
+                    <constraint firstAttribute="trailing" secondItem="6zn-r4-sBX" secondAttribute="trailing" constant="15" id="Us4-n2-PZ1"/>
+                    <constraint firstItem="25P-qD-kmH" firstAttribute="top" secondItem="fsB-zD-G2U" secondAttribute="top" constant="15" id="Y9n-q4-xPP"/>
+                    <constraint firstAttribute="bottom" secondItem="qAr-G6-z9p" secondAttribute="bottom" id="fTw-xj-OyO"/>
+                    <constraint firstItem="fOi-Sm-FL8" firstAttribute="leading" secondItem="fsB-zD-G2U" secondAttribute="leading" constant="90" id="h8k-UL-3Sl"/>
+                    <constraint firstItem="qAr-G6-z9p" firstAttribute="leading" secondItem="fsB-zD-G2U" secondAttribute="leading" constant="90" id="loP-mi-ju3"/>
+                    <constraint firstItem="HZl-GG-STS" firstAttribute="centerY" secondItem="fsB-zD-G2U" secondAttribute="centerY" id="pXe-o9-OO0"/>
+                    <constraint firstItem="6zn-r4-sBX" firstAttribute="centerY" secondItem="fsB-zD-G2U" secondAttribute="centerY" id="rTQ-ui-vQp"/>
+                    <constraint firstItem="6zn-r4-sBX" firstAttribute="leading" secondItem="qAr-G6-z9p" secondAttribute="trailing" id="sBu-I4-p0z"/>
+                    <constraint firstItem="HZl-GG-STS" firstAttribute="leading" secondItem="25P-qD-kmH" secondAttribute="trailing" constant="15" id="tI4-YU-nAY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10000" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="avatar" destination="25P-qD-kmH" id="jNs-GS-TOq"/>
+                <outlet property="groupNameLabel" destination="HZl-GG-STS" id="7Wv-u3-F08"/>
+                <outlet property="showSwitch" destination="6zn-r4-sBX" id="AGL-dI-FGx"/>
+            </connections>
+            <point key="canvasLocation" x="65.5" y="-82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zhanweitu" width="80" height="80"/>
+    </resources>
+</document>

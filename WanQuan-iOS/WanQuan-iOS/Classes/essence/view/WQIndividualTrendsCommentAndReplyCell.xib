@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="WQIndividualTrendsCommentAndReplyCell" rowHeight="82" id="KGk-i7-Jjw" customClass="WQIndividualTrendsCommentAndReplyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNa-dn-BwA">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.85438368055555558" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9T5-DN-0iN"/>
+                            <constraint firstAttribute="width" constant="40" id="ajp-kN-koi"/>
+                        </constraints>
+                        <state key="normal" image="zhanweitu"/>
+                        <connections>
+                            <action selector="avatarOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xev-TN-ngf"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOc-mS-y9R">
+                        <rect key="frame" x="70" y="17" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eW-BF-Lwx">
+                        <rect key="frame" x="70" y="37" width="25" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMl-rq-blv">
+                        <rect key="frame" x="281" y="12.5" width="27" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="nET-NR-YGl"/>
+                            <constraint firstAttribute="height" constant="22" id="rPs-Ag-NOS"/>
+                        </constraints>
+                        <state key="normal" image="dynamicpinglun"/>
+                        <connections>
+                            <action selector="commentOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bGn-0W-Fob"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcB-6Q-yn4">
+                        <rect key="frame" x="223" y="15.5" width="40" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="EiL-pU-CzE"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="pV5-N0-YCY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="赞" image="dynamiczan">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="zanOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lXK-8S-Kco"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rMl-rq-blv" firstAttribute="centerY" secondItem="iOc-mS-y9R" secondAttribute="centerY" constant="-2" id="4DU-Xi-bfs"/>
+                    <constraint firstItem="iOc-mS-y9R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="5PT-aG-VqR"/>
+                    <constraint firstItem="FNa-dn-BwA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="A9o-4k-bQQ"/>
+                    <constraint firstItem="2eW-BF-Lwx" firstAttribute="top" secondItem="iOc-mS-y9R" secondAttribute="bottom" constant="3" id="KCD-9V-Lhk"/>
+                    <constraint firstItem="FNa-dn-BwA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="OxX-DU-kQY"/>
+                    <constraint firstItem="iOc-mS-y9R" firstAttribute="leading" secondItem="FNa-dn-BwA" secondAttribute="trailing" constant="15" id="UKj-kC-086"/>
+                    <constraint firstItem="rMl-rq-blv" firstAttribute="leading" secondItem="gcB-6Q-yn4" secondAttribute="trailing" constant="18" id="lMJ-MG-Ghi"/>
+                    <constraint firstItem="gcB-6Q-yn4" firstAttribute="centerY" secondItem="rMl-rq-blv" secondAttribute="centerY" id="rFz-TN-8Ko"/>
+                    <constraint firstItem="2eW-BF-Lwx" firstAttribute="leading" secondItem="FNa-dn-BwA" secondAttribute="trailing" constant="15" id="w0v-eP-60B"/>
+                    <constraint firstAttribute="trailing" secondItem="rMl-rq-blv" secondAttribute="trailing" constant="12" id="x30-jw-PjL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="avatarButton" destination="FNa-dn-BwA" id="xAj-bD-2hM"/>
+                <outlet property="nameLabel" destination="iOc-mS-y9R" id="TRR-Lf-FBI"/>
+                <outlet property="timeLabel" destination="2eW-BF-Lwx" id="nBB-ec-B4z"/>
+            </connections>
+            <point key="canvasLocation" x="-241" y="-113"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dynamicpinglun" width="16" height="16"/>
+        <image name="dynamiczan" width="16" height="16"/>
+        <image name="zhanweitu" width="80" height="80"/>
+    </resources>
+</document>

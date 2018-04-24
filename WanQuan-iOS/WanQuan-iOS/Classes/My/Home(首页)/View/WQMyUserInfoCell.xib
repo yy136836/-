@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WQMyUserInfoCell" id="no4-r6-gUe" customClass="WQMyUserInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="no4-r6-gUe" id="3Kz-Qa-R3b">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPJ-fA-f0a">
+                        <rect key="frame" x="80" y="22" width="40.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhanweitu" translatesAutoresizingMaskIntoConstraints="NO" id="aMF-01-H81">
+                        <rect key="frame" x="15" y="15" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="PGf-hb-WS7"/>
+                            <constraint firstAttribute="height" constant="54" id="gxg-BX-01p"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="               " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovh-96-gu4">
+                        <rect key="frame" x="80" y="47" width="275" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-xR-Gzd">
+                        <rect key="frame" x="275" y="14" width="100" height="30"/>
+                        <state key="normal" image="woyaoshimingrenzheng"/>
+                        <connections>
+                            <action selector="goConfim:" destination="no4-r6-gUe" eventType="touchUpInside" id="CPM-ft-SUa"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aMF-01-H81" firstAttribute="top" secondItem="3Kz-Qa-R3b" secondAttribute="top" constant="15" id="4mq-7H-Sk2"/>
+                    <constraint firstItem="Ovh-96-gu4" firstAttribute="leading" secondItem="aMF-01-H81" secondAttribute="trailing" constant="11" id="JG9-Yd-QNt"/>
+                    <constraint firstItem="hPJ-fA-f0a" firstAttribute="top" secondItem="3Kz-Qa-R3b" secondAttribute="topMargin" constant="14" id="SSs-K2-DeR"/>
+                    <constraint firstItem="Ovh-96-gu4" firstAttribute="top" secondItem="hPJ-fA-f0a" secondAttribute="bottom" constant="4" id="SbF-Fj-U7Q"/>
+                    <constraint firstItem="hPJ-fA-f0a" firstAttribute="leading" secondItem="aMF-01-H81" secondAttribute="trailing" constant="11" id="Vf7-I3-Ixd"/>
+                    <constraint firstItem="PTy-xR-Gzd" firstAttribute="top" secondItem="3Kz-Qa-R3b" secondAttribute="top" constant="14" id="cJu-Ps-cZb"/>
+                    <constraint firstAttribute="trailing" secondItem="PTy-xR-Gzd" secondAttribute="trailing" id="d5g-4o-kHX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ovh-96-gu4" secondAttribute="trailing" constant="12" id="wtQ-m2-YKO"/>
+                    <constraint firstItem="aMF-01-H81" firstAttribute="leading" secondItem="3Kz-Qa-R3b" secondAttribute="leading" constant="15" id="ybd-mG-ohk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="aMF-01-H81" id="WxT-tv-BRZ"/>
+                <outlet property="confimButton" destination="PTy-xR-Gzd" id="OHL-1S-2Rr"/>
+                <outlet property="userName" destination="hPJ-fA-f0a" id="Js5-ue-tie"/>
+                <outlet property="workingCompany" destination="Ovh-96-gu4" id="zon-aC-i7G"/>
+            </connections>
+            <point key="canvasLocation" x="-156.5" y="76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="woyaoshimingrenzheng" width="100" height="30"/>
+        <image name="zhanweitu" width="80" height="80"/>
+    </resources>
+</document>
