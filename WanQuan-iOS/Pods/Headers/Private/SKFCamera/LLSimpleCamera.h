@@ -1,1 +1,0 @@
-../../../SKFCamera/SKFCamera/LLSimpleCamera.h

@@ -1,1 +1,0 @@
-../../../SKFCamera/SKFCamera/SKFCamera.h
