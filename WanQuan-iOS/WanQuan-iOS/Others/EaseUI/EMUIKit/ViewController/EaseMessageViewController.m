@@ -1274,7 +1274,7 @@
             }
         }
         /***************************************************/
-//        
+//       不不不
 //        NSString *CellIdentifier = [EaseMessageCell cellIdentifierWithModel:model];
 //        
         EaseBaseMessageCell *sendCell;
